@@ -13,7 +13,7 @@ services:
     init: true
     environment:
       PORT: "3000"
-      TICK_MS: "120000"
+      TICK_MS: "30000"
       DATABASE_URL: postgresql://beacon:${APP_PASSWORD}@davem0rg-seat-beacon_db_1:5432/beacon
     depends_on:
       - db
