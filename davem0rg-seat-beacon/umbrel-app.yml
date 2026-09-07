@@ -4,7 +4,7 @@ name: Seat Beacon
 tagline: Watch an Alaska flight and ping your phone when a seat opens
 icon: https://raw.githubusercontent.com/davem0rg/umbrel-apps/main/davem0rg-seat-beacon/icon.png
 category: Utilities
-version: "1.0.5"
+version: "1.0.6"
 port: 3000
 description: >-
   Seat Beacon reads Alaska Airlines' public seat map for a flight you care
@@ -29,8 +29,8 @@ gallery:
   - https://raw.githubusercontent.com/davem0rg/umbrel-apps/main/davem0rg-seat-beacon/2.png
   - https://raw.githubusercontent.com/davem0rg/umbrel-apps/main/davem0rg-seat-beacon/3.png
 releaseNotes: >-
-  Polling now drifts by about ±10 seconds around the 2-minute cadence so
-  checks are not metronomic. Seat maps still cache across devices.
+  You can change how often an existing watch checks (2 / 5 / 10 min) without
+  recreating it. Polling still drifts slightly around that cadence.
 dependencies: []
 deterministicPassword: true
 path: ""
