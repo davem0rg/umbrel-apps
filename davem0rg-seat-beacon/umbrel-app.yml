@@ -2,7 +2,7 @@ manifestVersion: 1
 id: davem0rg-seat-beacon
 name: Seat Beacon
 tagline: Watch an Alaska flight and ping your phone when a seat opens
-icon: https://raw.githubusercontent.com/davem0rg/umbrel-apps/main/davem0rg-seat-beacon/icon.svg
+icon: https://raw.githubusercontent.com/davem0rg/umbrel-apps/main/davem0rg-seat-beacon/icon.png
 category: Utilities
 version: "1.0.0"
 port: 3000
@@ -24,6 +24,10 @@ submitter: davem0rg
 submission: https://github.com/davem0rg/umbrel-apps
 repo: https://github.com/davem0rg/seat-beacon
 support: https://github.com/davem0rg/seat-beacon/issues
+gallery:
+  - https://raw.githubusercontent.com/davem0rg/umbrel-apps/main/davem0rg-seat-beacon/1.png
+  - https://raw.githubusercontent.com/davem0rg/umbrel-apps/main/davem0rg-seat-beacon/2.png
+  - https://raw.githubusercontent.com/davem0rg/umbrel-apps/main/davem0rg-seat-beacon/3.png
 releaseNotes: >-
   First Umbrel release: live Alaska seat maps, multi-cabin filters, and
   Pushover iPhone alerts on a two-minute check while the box is running.
