@@ -1,0 +1,30 @@
+version: "3.7"
+
+services:
+  app_proxy:
+    environment:
+      APP_HOST: davem0rg-seat-beacon_server_1
+      APP_PORT: 3000
+
+  server:
+    image: ghcr.io/davem0rg/seat-beacon:latest
+    restart: on-failure
+    user: "1000:1000"
+    init: true
+    environment:
+      PORT: "3000"
+      TICK_MS: "120000"
+      DATABASE_URL: postgresql://beacon:${APP_PASSWORD}@davem0rg-seat-beacon_db_1:5432/beacon
+    depends_on:
+      - db
+
+  db:
+    image: postgres:16-alpine
+    restart: on-failure
+    environment:
+      POSTGRES_USER: beacon
+      POSTGRES_PASSWORD: ${APP_PASSWORD}
+      POSTGRES_DB: beacon
+      PGDATA: /var/lib/postgresql/data/pgdata
+    volumes:
+      - ${APP_DATA_DIR}/db:/var/lib/postgresql/data

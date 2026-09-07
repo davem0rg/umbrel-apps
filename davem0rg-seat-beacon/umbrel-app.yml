@@ -1,0 +1,34 @@
+manifestVersion: 1
+id: davem0rg-seat-beacon
+name: Seat Beacon
+tagline: Watch an Alaska flight and ping your phone when a seat opens
+icon: https://raw.githubusercontent.com/davem0rg/umbrel-apps/main/davem0rg-seat-beacon/icon.svg
+category: Utilities
+version: "1.0.0"
+port: 3000
+description: >-
+  Seat Beacon reads Alaska Airlines' public seat map for a flight you care
+  about and sends a Pushover alert to your iPhone when a matching seat opens
+  — First, Main Cabin Extra, exit row, aisle, or window.
+
+
+  The Umbrel box keeps checking every two minutes even if your phone is locked.
+  Open the app, paste your Pushover User Key and API Token, then watch a flight.
+
+
+  This is a personal utility. It talks to Alaska's public seat preview and
+  Pushover. No airline account is required.
+developer: davem0rg
+website: https://github.com/davem0rg/seat-beacon
+submitter: davem0rg
+submission: https://github.com/davem0rg/umbrel-apps
+repo: https://github.com/davem0rg/seat-beacon
+support: https://github.com/davem0rg/seat-beacon/issues
+releaseNotes: >-
+  First Umbrel release: live Alaska seat maps, multi-cabin filters, and
+  Pushover iPhone alerts on a two-minute check while the box is running.
+dependencies: []
+deterministicPassword: true
+path: ""
+defaultUsername: ""
+defaultPassword: ""
