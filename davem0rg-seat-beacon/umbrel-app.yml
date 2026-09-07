@@ -4,7 +4,7 @@ name: Seat Beacon
 tagline: Watch an Alaska flight and ping your phone when a seat opens
 icon: https://raw.githubusercontent.com/davem0rg/umbrel-apps/main/davem0rg-seat-beacon/icon.png
 category: Utilities
-version: "1.0.2"
+version: "1.0.3"
 port: 3000
 description: >-
   Seat Beacon reads Alaska Airlines' public seat map for a flight you care
@@ -29,9 +29,8 @@ gallery:
   - https://raw.githubusercontent.com/davem0rg/umbrel-apps/main/davem0rg-seat-beacon/2.png
   - https://raw.githubusercontent.com/davem0rg/umbrel-apps/main/davem0rg-seat-beacon/3.png
 releaseNotes: >-
-  Last-check time now follows the Umbrel box. Reopening the app no longer
-  shows a stale "6m ago" after you leave — it picks up the background check
-  and refreshes the seat map. Seat matching and Pushover are unchanged.
+  Watches now live on the Umbrel box, so a phone and a laptop see the same
+  flights. Last-check time still follows the background poll.
 dependencies: []
 deterministicPassword: true
 path: ""
